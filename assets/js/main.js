@@ -106,8 +106,8 @@
    */
   on('click', '.mobile-nav-toggle', function (e) {
     select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
+    this.classList.toggle('fa-bars')
+    this.classList.toggle('fa-xmark')
   })
 
   /**
@@ -121,8 +121,8 @@
       if (navbar.classList.contains('navbar-mobile')) {
         navbar.classList.remove('navbar-mobile')
         let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
+        navbarToggle.classList.toggle('fa-bars')
+        navbarToggle.classList.toggle('fa-xmark')
       }
       scrollto(this.hash)
     }
@@ -146,7 +146,7 @@
     speed: 400,
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 4500,
       disableOnInteraction: false
     },
     slidesPerView: 'auto',
@@ -182,7 +182,7 @@
     speed: 600,
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 10000,
       disableOnInteraction: false
     },
     slidesPerView: 'auto',
